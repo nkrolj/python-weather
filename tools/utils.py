@@ -8,3 +8,7 @@ def convert_temp(value, units = "k"):
             return value
         case _:
             return value
+
+def convert_speed(value):
+    converted = round(value * 3.6,2)
+    return converted
