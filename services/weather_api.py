@@ -15,7 +15,7 @@ def fetch_weather():
             "feels_like": convert_temp( data.get("main").get("feels_like"), "c" ),
             "wind": data.get("wind").get("speed"),
             "city": data.get("name"),
-            "timestamp": datetime.now().strftime("%H:%M:%S %d.%m.%y")
+            "timestamp": datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         }
         return weather
     except:
